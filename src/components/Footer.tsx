@@ -25,9 +25,9 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-bold mb-4">Quick Links</h4>
             <div className="space-y-2">
-              {['Home', 'Services', 'About', 'How It Works', 'Contact'].map((link) => (
+              {['Home', 'Services', 'About', 'HowItWorks', 'Contact'].map((link) => (
                 <button
-                  key={link}
+                  key={link} 
                   onClick={() => document.getElementById(link.toLowerCase().replace(' ', '-'))?.scrollIntoView({ behavior: 'smooth' })}
                   className="block text-gray-400 hover:text-white transition-colors duration-300"
                 >
