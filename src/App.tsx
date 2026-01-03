@@ -1,33 +1,47 @@
-import React from 'react';
-import { Helmet } from 'react-helmet-async';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Services from './components/Services';
-import About from './components/About';
-import HowItWorks from './components/HowItWorks';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import { Toaster } from "@/components/ui/toaster";
+import { Toaster as Sonner } from "@/components/ui/sonner";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
+import Index from "./pages/Index";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Industries from "./pages/Industries";
+import Division from "./pages/Division";
+import Blogs from "./pages/Blogs";
+import Career from "./pages/Career";
+import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
 
-function App() {
-  return (
-    <>
-      <Helmet>
-        <title>PortAI Technologies - AI-Powered Career Services</title>
-        <meta name="description" content="Transform your career with AI-powered resume creation, portfolio design, and mock interviews. Professional delivery in 48 hours from Hyderabad, India." />
-      </Helmet>
-      <div className="min-h-screen bg-white">
-        <Header />
-        <main>
-          <Hero />
-          <Services />
-          <About />
-          <HowItWorks />
-          <Contact />
-        </main>
-        <Footer />
-      </div>
-    </>
-  );
-}
+const queryClient = new QueryClient();
+
+const App = () => (
+  <HelmetProvider>
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/services/:slug" element={<Services />} />
+            <Route path="/industries" element={<Industries />} />
+            <Route path="/industries/:slug" element={<Industries />} />
+            <Route path="/division" element={<Division />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/blogs/:slug" element={<Blogs />} />
+            <Route path="/career" element={<Career />} />
+            <Route path="/contact" element={<Contact />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  </HelmetProvider>
+);
 
 export default App;
