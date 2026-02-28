@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Menu, X, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.jpg";
@@ -18,6 +18,17 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleLogoClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (location.pathname === "/") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      navigate("/");
+      window.scrollTo({ top: 0 });
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -63,7 +74,7 @@ export function Header() {
         <div className="container-industrial">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-3 group">
+            <Link to="/" onClick={handleLogoClick} className="flex items-center gap-3 group">
               <div className="h-14 w-14 rounded-full overflow-hidden border-2 border-accent/30 shadow-lg group-hover:border-accent transition-colors duration-300">
                 <img 
                   src={logo} 
