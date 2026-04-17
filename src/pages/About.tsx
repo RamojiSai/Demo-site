@@ -48,7 +48,7 @@ const About = () => {
         <title>About Us | Port AI Technologies - Engineering Excellence</title>
         <meta
           name="description"
-          content="Learn about Port AI Technologies LLP - a technology-driven engineering and CAD services company delivering precision-focused solutions for complex industrial projects."
+          content="Learn about Port AI Technologies Pvt. Ltd. - a technology-driven engineering and CAD services company delivering precision-focused solutions for complex industrial projects."
         />
       </Helmet>
 
@@ -88,7 +88,7 @@ const About = () => {
                   Engineering Solutions Built on Expertise & Innovation
                 </h2>
                 <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                  Port AI Technologies LLP is a technology-driven engineering and CAD services 
+                  Port AI Technologies Pvt. Ltd. is a technology-driven engineering and CAD services 
                   company delivering precision-focused solutions for complex industrial projects. 
                   With a strong foundation in plant engineering, design automation, and industrial 
                   drafting, we support global industries with safe, scalable, and cost-effective 
