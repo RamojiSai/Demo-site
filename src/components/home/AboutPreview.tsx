@@ -43,7 +43,7 @@ export function AboutPreview() {
               Engineering Solutions for Complex Industrial Projects
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Port AI Technologies Pvt. Ltd is a technology-driven engineering and CAD services 
+              Port AI Technologies Pvt. Ltd. is a technology-driven engineering and CAD services 
               company delivering precision-focused solutions for complex industrial projects. 
               With a strong foundation in plant engineering, design automation, and industrial 
               drafting, we support global industries with safe, scalable, and cost-effective 

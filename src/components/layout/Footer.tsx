@@ -156,7 +156,7 @@ export function Footer() {
       <div className="border-t border-primary-foreground/10">
         <div className="container-industrial py-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-primary-foreground/60 text-sm">
-            © {new Date().getFullYear()} Port AI Technologies Pvt. Ltd.  All rights reserved.
+            © {new Date().getFullYear()} Port AI Technologies Pvt. Ltd.. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm">
             <Link to="/privacy" className="text-primary-foreground/60 hover:text-accent transition-colors">
