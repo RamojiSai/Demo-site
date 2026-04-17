@@ -78,7 +78,7 @@ export function Header() {
               <div className="h-14 w-14 rounded-full overflow-hidden border-2 border-accent/30 shadow-lg group-hover:border-accent transition-colors duration-300">
                 <img 
                   src={logo} 
-                  alt="Port AI Technologies" 
+                  alt="Port AI Technologies Pvt. Ltd." 
                   className="h-full w-full object-cover"
                 />
               </div>
@@ -87,7 +87,7 @@ export function Header() {
                   Port AI
                 </span>
                 <span className="text-xs text-muted-foreground font-medium tracking-wider uppercase">
-                  Technologies
+                  Technologies Pvt. Ltd.
                 </span>
               </div>
             </Link>

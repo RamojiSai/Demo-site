@@ -28,7 +28,7 @@ export function Footer() {
               <div className="h-14 w-14 rounded-full overflow-hidden border-2 border-accent/30 shadow-lg bg-white">
                 <img 
                   src={logo} 
-                  alt="Port AI Technologies" 
+                  alt="Port AI Technologies Pvt. Ltd." 
                   className="h-full w-full object-cover"
                 />
               </div>
