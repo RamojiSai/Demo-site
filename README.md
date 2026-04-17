@@ -1,6 +1,6 @@
 # Port AI Technologies – Landing Page
 
-Official website for **Port AI Technologies LLP** — precision-focused plant engineering and CAD solutions for Oil & Gas, Petrochemical, Power, and Process Industries.
+Official website for **Port AI Technologies Pvt. Ltd.** — precision-focused plant engineering and CAD solutions for Oil & Gas, Petrochemical, Power, and Process Industries.
 
 **Live**: [www.portaitechnologies.com](https://www.portaitechnologies.com)
 

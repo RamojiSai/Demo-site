@@ -15,7 +15,7 @@ const Index = () => {
         <title>Port AI Technologies | Plant Engineering & CAD Services</title>
         <meta
           name="description"
-          content="Port AI Technologies LLP delivers precision-focused engineering and CAD solutions for Oil & Gas, Petrochemical, Power, and Process Industries. Expert plant engineering services in Hyderabad, India."
+          content="Port AI Technologies Pvt. Ltd. delivers precision-focused engineering and CAD solutions for Oil & Gas, Petrochemical, Power, and Process Industries. Expert plant engineering services in Hyderabad, India."
         />
         <meta
           name="keywords"
