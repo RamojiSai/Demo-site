@@ -1,6 +1,5 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, Award, Users, Lightbulb, Target, Eye, CheckCircle } from "lucide-react";
@@ -51,8 +50,6 @@ const About = () => {
           content="Learn about Port AI Technologies Pvt. Ltd. - a technology-driven engineering and CAD services company delivering precision-focused solutions for complex industrial projects."
         />
       </Helmet>
-
-      <Header />
 
       <main>
         {/* Hero Section */}

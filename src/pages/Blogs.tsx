@@ -1,6 +1,5 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ArrowRight, Calendar, User } from "lucide-react";
 import heroPetrochemical from "@/assets/hero-petrochemical.jpg";
@@ -50,8 +49,6 @@ const Blogs = () => {
           content="Read our latest articles on plant engineering, CAD services, and industrial design best practices from Port AI Technologies."
         />
       </Helmet>
-
-      <Header />
 
       <main>
         {/* Hero Section */}

@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet-async";
-import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { HeroSlider } from "@/components/home/HeroSlider";
 import { AboutPreview } from "@/components/home/AboutPreview";
@@ -24,8 +23,6 @@ const Index = () => {
         <link rel="canonical" href="https://portaitechnologies.com" />
       </Helmet>
 
-      <Header />
-      
       <main>
         <HeroSlider />
         <AboutPreview />

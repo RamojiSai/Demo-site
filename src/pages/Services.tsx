@@ -1,6 +1,5 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ArrowRight } from "lucide-react";
 import heroRefinery from "@/assets/hero-refinery.jpg";
@@ -102,8 +101,6 @@ const Services = () => {
           content="Comprehensive plant engineering and CAD services including 3D piping design, P&ID drawings, process engineering, and more for Oil & Gas, Petrochemical, and Power industries."
         />
       </Helmet>
-
-      <Header />
 
       <main>
         {/* Hero Section */}
