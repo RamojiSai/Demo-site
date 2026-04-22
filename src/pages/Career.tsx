@@ -1,6 +1,5 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Building2, Clock, Briefcase } from "lucide-react";
@@ -40,8 +39,6 @@ const Career = () => {
           content="Join Port AI Technologies and build your career in engineering and CAD services. Explore current openings in Hyderabad, India."
         />
       </Helmet>
-
-      <Header />
 
       <main>
         {/* Hero Section */}

@@ -28,6 +28,7 @@ export function ServicesSection() {
   return (
     <section className="section-padding bg-muted" id="services">
       <div className="container-industrial">
+        
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-4">

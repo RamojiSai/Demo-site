@@ -45,40 +45,57 @@ export function Header() {
   return (
     <>
       {/* Top Bar */}
-      <div className="hidden lg:block bg-primary text-primary-foreground py-2">
-        <div className="container-industrial flex justify-between items-center text-sm">
-          <div className="flex items-center gap-6">
-            <a href="tel:+919440584273" className="flex items-center gap-2 hover:text-accent transition-colors">
-              <Phone className="h-4 w-4" />
-              +91 94405 84273
-            </a>
-            <a href="mailto:contact@portaitechnologies.com" className="flex items-center gap-2 hover:text-accent transition-colors">
-              <Mail className="h-4 w-4" />
-              contact@portaitechnologies.com
-            </a>
-          </div>
-          <div className="text-primary-foreground/80">
-            Engineering Excellence for Industrial Success
+        <div className="hidden lg:block bg-primary text-primary-foreground py-2 overflow-hidden">
+          <div className="flex w-max animate-marquee text-sm">
+            <div className="flex items-center gap-16 pr-16 whitespace-nowrap">
+              <span className="flex items-center gap-2">
+                <Phone className="h-4 w-4" />
+                +91 94405 84273
+              </span>
+
+              <span className="flex items-center gap-2">
+                <Mail className="h-4 w-4" />
+                contact@portaitechnologies.com
+              </span>
+
+              <span>
+                🚀 Driving Industrial Success Through Engineering Excellence • 14 Months of Trusted Support
+              </span>
+            </div>
+
+            <div className="flex items-center gap-16 pr-16 whitespace-nowrap" aria-hidden="true">
+              <span className="flex items-center gap-2">
+                <Phone className="h-4 w-4" />
+                +91 94405 84273
+              </span>
+
+              <span className="flex items-center gap-2">
+                <Mail className="h-4 w-4" />
+                contact@portaitechnologies.com
+              </span>
+
+              <span>
+                🚀 Driving Industrial Success Through Engineering Excellence • 14 Months of Trusted Support
+              </span>
+            </div>
           </div>
         </div>
-      </div>
 
       {/* Main Header */}
       <header
-        className={`sticky top-0 z-50 transition-all duration-300 ${
-          isScrolled
+        className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled
             ? "bg-card/95 backdrop-blur-md shadow-elevated"
             : "bg-card"
-        }`}
+          }`}
       >
         <div className="container-industrial">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <Link to="/" onClick={handleLogoClick} className="flex items-center gap-3 group">
               <div className="h-14 w-14 rounded-full overflow-hidden border-2 border-accent/30 shadow-lg group-hover:border-accent transition-colors duration-300">
-                <img 
-                  src={logo} 
-                  alt="Port AI Technologies" 
+                <img
+                  src={logo}
+                  alt="Port AI Technologies"
                   className="h-full w-full object-cover"
                 />
               </div>
@@ -98,11 +115,10 @@ export function Header() {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`px-4 py-2 text-sm font-medium transition-all duration-200 rounded-md ${
-                    location.pathname === item.path
+                  className={`px-4 py-2 text-sm font-medium transition-all duration-200 rounded-md ${location.pathname === item.path
                       ? "text-accent bg-accent/10"
                       : "text-foreground hover:text-accent hover:bg-muted"
-                  }`}
+                    }`}
                 >
                   {item.name}
                 </Link>
@@ -129,20 +145,18 @@ export function Header() {
 
         {/* Mobile Menu */}
         <div
-          className={`lg:hidden overflow-hidden transition-all duration-300 ${
-            isMenuOpen ? "max-h-screen" : "max-h-0"
-          }`}
+          className={`lg:hidden overflow-hidden transition-all duration-300 ${isMenuOpen ? "max-h-screen" : "max-h-0"
+            }`}
         >
           <nav className="container-industrial py-4 border-t border-border">
             {navItems.map((item, index) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className={`block py-3 text-base font-medium transition-colors ${
-                  location.pathname === item.path
+                className={`block py-3 text-base font-medium transition-colors ${location.pathname === item.path
                     ? "text-accent"
                     : "text-foreground hover:text-accent"
-                }`}
+                  }`}
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
                 {item.name}

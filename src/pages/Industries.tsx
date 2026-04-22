@@ -1,6 +1,5 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ArrowRight, Droplets, Flame, Zap, Factory, Pill, Cog, UtensilsCrossed } from "lucide-react";
 import heroPetrochemical from "@/assets/hero-petrochemical.jpg";
@@ -102,8 +101,6 @@ const Industries = () => {
           content="Port AI Technologies serves Oil & Gas, Petrochemical, Power, Pharmaceutical, and Food & Beverage industries with specialized engineering and CAD services."
         />
       </Helmet>
-
-      <Header />
 
       <main>
         {/* Hero Section */}

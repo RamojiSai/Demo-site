@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet-async";
-import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ContactSection } from "@/components/home/ContactSection";
 import heroPowerplant from "@/assets/hero-powerplant.jpg";
@@ -14,8 +13,6 @@ const Contact = () => {
           content="Get in touch with Port AI Technologies for engineering and CAD services. Located in Hyderabad, India. Call +91 94405 84273 or email contact@portaitechnologies.com"
         />
       </Helmet>
-
-      <Header />
 
       <main>
         {/* Hero Section */}

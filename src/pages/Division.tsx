@@ -1,6 +1,5 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle } from "lucide-react";
@@ -46,8 +45,6 @@ const Division = () => {
           content="Explore Port AI Technologies' specialized divisions: Plant Engineering and CAD Services, delivering comprehensive solutions for industrial projects."
         />
       </Helmet>
-
-      <Header />
 
       <main>
         {/* Hero Section */}
