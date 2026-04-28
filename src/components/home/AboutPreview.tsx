@@ -28,8 +28,8 @@ export function AboutPreview() {
             {/* Experience Badge */}
             <div className="absolute -bottom-6 -right-6 md:bottom-8 md:-right-8 bg-accent text-accent-foreground p-6 rounded-2xl shadow-glow">
               <div className="text-center">
-                <span className="block text-4xl font-heading font-bold">10+</span>
-                <span className="text-sm font-medium">Years of<br />Excellence</span>
+                {/* <span className="block text-4xl font-heading font-bold"></span> */}
+                <span className="text-sm font-medium">Delivering<br />with Excellence</span>
               </div>
             </div>
           </div>
