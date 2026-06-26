@@ -104,7 +104,7 @@ export function Header() {
                   Port AI
                 </span>
                 <span className="text-xs text-muted-foreground font-medium tracking-wider uppercase">
-                  Technologies Pvt. Ltd.
+                  Technologies
                 </span>
               </div>
             </Link>
